@@ -1,5 +1,5 @@
 # Finance Analytics - Credit Scoring
-
+![alt text](images/dashboard.png)
 ## Introduction
 Ce projet fait partie de mon portfolio spécialisé en data science appliquée à la finance. Il illustre ma capacité à manipuler des données sensibles, construire des modèles robustes et les interpréter dans un cadre métier.
 
@@ -55,5 +55,8 @@ Les institutions financières doivent anticiper le risque de défaut pour proté
 
 ## Contributions
 Les contributions sont les bienvenues ! Veuillez soumettre une pull request ou ouvrir une issue pour toute suggestion ou amélioration.
+
+Applicattion : https://finance-analytics---credit-scoring.streamlit.app/
+Dashboard: https://app.powerbi.com/groups/me/reports/1247c610-71ea-4df2-b8cc-b71f992e27aa/1bdb29f134b7576fc281?experience=power-bi
 
 Auteur : Yendi Yohann
