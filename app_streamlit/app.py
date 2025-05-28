@@ -2,12 +2,20 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import joblib
-
+import os
 # Charger le modèle Random Forest entraîné avec SMOTE (à adapter selon votre modèle)
 
 # Supposez que le modèle est sauvegardé sous 'rf_smote_model.pkl'
 # Vous devez avoir sauvegardé le modèle avec joblib.dump(rf_smote, 'rf_smote_model.pkl')
-model = joblib.load('../model/rf_smote_model.pkl')
+
+# Charger le modèle
+model_path = os.path.join(os.path.dirname(__file__), "../model/rf_smote_model.pkl")
+if not os.path.exists(model_path):
+    st.error(f"Le fichier {model_path} est introuvable sur Railway !")
+    st.stop()
+with open(model_path, "rb") as file:
+    model = joblib.load(file)
+
 
 st.title("Scoring de Crédit - Prédiction du Risque de Défaut")
 
